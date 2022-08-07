@@ -67,6 +67,6 @@ this.webAR.start();
 ### 6. demo预览 (建议在微信浏览中预览)
 
 
-![二维码](assets/images/qrcode.png)
+![二维码](https://upload-images.jianshu.io/upload_images/25811982-4ddfea9e3e58aa10.png)
 
-![识别图](assets/images/marker.jpg)
+![识别图](https://upload-images.jianshu.io/upload_images/25811982-bf731350d9cb0873.jpg)
