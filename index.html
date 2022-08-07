@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebAR - threejs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <style>
+        html,body {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #control {
+            position: fixed;
+            bottom: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div id="stats"></div>
+    <div id="control">
+        <!-- <button id="btnStart">打开相机</button> -->
+        <button id="btnAr">本地识别</button>
+        <button id="btnSearch">云识别</button>
+        <button id="btnPause">暂停跟踪</button>
+        <button id="btnRestart">恢复跟踪</button>
+    </div>
+    
+    <div id="container">
+    </div>
+
+<script src="assets/libs/threejs/three.min.js"></script>
+<script src="assets/libs/threejs/stats.min.js"></script>
+
+<script src="assets/libs/threejs/fflate.min.js"></script>
+<script src="assets/libs/threejs/FBXLoader.js"></script>
+<script src="assets/libs/threejs/GLTFLoader.js"></script>
+
+<script src="assets/libs/other/vconsole.min.js"></script>
+<script src="assets/libs/webar/dist/webar.beta-1.0.0.js"></script>
+
+<script>
+    (() => {
+        if (window.VConsole) new VConsole();
+           
+        const e = document.createElement('script');
+
+        e.setAttribute('src', `assets/js/bundle.js?t=${Date.now()}`);
+        document.body.appendChild(e);
+    })();
+</script>
+</body>
+</html>
