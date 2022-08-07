@@ -66,6 +66,7 @@ this.webAR.start();
 
 ### 6. demo预览 (建议在微信浏览中预览)
 
-![二级码(assets/images/qrcode.jpg)
 
-![识别图片(assets/images/market.jpg)
+![二维码](assets/images/qrcode.png)
+
+![识别图](assets/images/marker.jpg)
